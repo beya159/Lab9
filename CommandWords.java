@@ -13,7 +13,8 @@ public class CommandWords
 {
     // a constant array that holds all valid command words
     private static final String[] validCommands = {
-        "go", "quit", "help"
+        //Question 14
+        "go", "quit", "help","look", "eat"
     };
 
     /**
@@ -37,5 +38,13 @@ public class CommandWords
         }
         // if we get here, the string was not found in the commands
         return false;
+    }
+    // Question 16
+    public String showAll(){
+        String allCommands = "  ";
+        for(String command: validCommands){
+            allCommands+=(" "+ command);
+        }
+        return allCommands;
     }
 }
