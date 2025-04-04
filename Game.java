@@ -46,18 +46,18 @@ public class Game
         // initialise room exits
         outside.setExits(null, theater, lab, pub);
         //Question 9
-        outside.setExits("east", theater);
-        outside.setExits("south", lab);
-        outside.setExits("west", pub);
+        outside.setExit("east", theater);
+        outside.setExit("south", lab);
+        outside.setExit("west", pub);
         
-        theater.setExits("west", outside);
+        theater.setExit("west", outside);
         
-        pub.setExits("east", outside);
+        pub.setExit("east", outside);
         
-        lab.setExits("north", outside);
-        lab.setExits("east", office);
+        lab.setExit("north", outside);
+        lab.setExit("east", office);
         
-        office.setExits("west", lab);
+        office.setExit("west", lab);
 
         currentRoom = outside;  // start game outside
     }
