@@ -55,20 +55,12 @@ public class Room
     * @return A description of the available exits.
     */
     public String getExitString() {
+        // Question 10
         String exitString = "You are " + description;
         exitString = exitString + "\nExits: ";
-        /*if(!northExit.equals(null)) {
-            exitString += "north ";
-        }    
-        if(!eastExit.equals(null)) {
-            exitString += "east ";
+        for (String direction: exits.keySet()){
+            exitString += (direction+ "");
         }
-        if(!southExit.equals(null)) {
-            exitString += "south ";
-        }
-        if(!westExit.equals(null)) {
-            exitString += "west ";
-        }*/
         return exitString;  
     }
     
