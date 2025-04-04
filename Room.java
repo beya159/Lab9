@@ -33,21 +33,8 @@ public class Room
     }
 
     public Room getExit(String direction){
-        Room nextRoom = null;/*
-        if(direction.equals("north")) {
-            nextRoom = northExit;
-        }
-        if(direction.equals("east")) {
-            nextRoom = eastExit;
-        }
-        if(direction.equals("south")) {
-            nextRoom = southExit;
-        }
-        if(direction.equals("west")) {
-            nextRoom = westExit;
-        }*/
-    
-        return nextRoom;
+        // Question 8
+        return exits.get(direction);
     }
     
     /** * Return a description of the room’s exits,
